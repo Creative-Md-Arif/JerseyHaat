@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Trebuchet MS', 'TrebuchetMS', 'TrebuchetMS-Bold', 'Trebuchet MS Bold', 'TrebuchetMS-Italic', sans-serif;
+    background-color: #0e0c0a;
+    color: #f5f0e8;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #1a1612; }
+  ::-webkit-scrollbar-thumb { background: #a0802c; border-radius: 3px; }
+}
+
+@layer components {
+  .admin-input {
+    @apply w-full px-4 py-2.5 rounded-lg border bg-dark-2 text-cream placeholder-text-muted text-sm;
+    border-color: #252018;
+  }
+  .admin-input:focus {
+    outline: none;
+    border-color: #c9a84c;
+    box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.15);
+  }
+  .admin-btn-primary {
+    @apply px-4 py-2.5 rounded-lg text-sm font-medium transition-all;
+    background-color: #c9a84c;
+    color: #0e0c0a;
+  }
+  .admin-btn-primary:hover {
+    background-color: #e8d5a3;
+  }
+  .admin-btn-secondary {
+    @apply px-4 py-2.5 rounded-lg text-sm font-medium border transition-all;
+    border-color: #c9a84c;
+    color: #c9a84c;
+    background: transparent;
+  }
+  .admin-btn-secondary:hover {
+    background-color: #c9a84c;
+    color: #0e0c0a;
+  }
+  .admin-card {
+    @apply bg-dark-2 border border-dark-3 rounded-xl p-6;
+  }
+  .admin-table th {
+    @apply px-4 py-3 text-left text-xs font-medium text-text-muted uppercase tracking-wider;
+  }
+  .admin-table td {
+    @apply px-4 py-3 text-sm text-cream border-t border-dark-3;
+  }
+}
