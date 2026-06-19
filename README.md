@@ -1,4 +1,4 @@
-# Voûte Jersey Shop - Full Stack E-Commerce Application
+#JerseyHaat Shop - Full Stack E-Commerce Application
 
 A luxury football jersey e-commerce web application built with the MERN stack (MongoDB, Express, React, Node.js) featuring a gold & dark premium theme.
 
