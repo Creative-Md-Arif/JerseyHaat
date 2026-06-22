@@ -45,7 +45,7 @@ const clubSchema = new mongoose.Schema(
 );
 
 // Index for faster queries
-clubSchema.index({ slug: 1 });
+
 clubSchema.index({ isActive: 1, order: 1 });
 
 module.exports = mongoose.model('Club', clubSchema);

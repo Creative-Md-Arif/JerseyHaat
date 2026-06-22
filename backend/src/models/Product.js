@@ -83,7 +83,7 @@ const productSchema = new mongoose.Schema(
 );
 
 // Indexes for efficient querying
-productSchema.index({ slug: 1 });
+
 productSchema.index({ club: 1, isActive: 1 });
 productSchema.index({ type: 1, isActive: 1 });
 productSchema.index({ isFeatured: 1, isActive: 1 });
